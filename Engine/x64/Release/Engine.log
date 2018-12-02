@@ -1,0 +1,8 @@
+﻿  Enemies.cpp
+  Game.cpp
+  Goal.cpp
+  Graphics.cpp
+c:\users\skyver\desktop\poo game\engine\goal.cpp(25): error C2106: '=': left operand must be l-value
+  Main.cpp
+  MainWindow.cpp
+  Player.cpp
