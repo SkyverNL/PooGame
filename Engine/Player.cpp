@@ -58,7 +58,7 @@ void Player::UpdateMovement(MainWindow& wnd)
 
 int Player::GetX() const
 {
-	return X;   //this is where the error gets trown
+	return X;   //this is where the error gets trown //test test ignore
 }
 
 int Player::GetY() const
