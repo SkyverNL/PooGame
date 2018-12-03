@@ -7,7 +7,7 @@ Goal::Goal()
 {
 }
 
-bool Goal::HitDetection()
+bool Goal::HitDetection( const Player& P )
 {
 	
 	int GP = Point;
@@ -31,9 +31,6 @@ void Goal::Drawcode(Graphics & gfx)
 	int heigth = Point + GoalWH;
 	ColorPulsing();
 	gfx.drawSetBox(Point,width,heigth,R,G,B);
-	HitDetection();
-
-
 }
 
 void Goal::ColorPulsing()
@@ -91,7 +88,7 @@ void Goal::initload(int Point1)
 
 }
 
-bool Goal::TESTGET() const
+bool Goal::WasHit() const
 {
 	
 	return Test;
