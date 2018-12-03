@@ -60,7 +60,6 @@ void Game::UpdateModel()
 	P0.UpdateMovement( wnd );
 	P0.ScreenborderY();
 	P0.ScreenBorderX();
-
 	goal.HitDetection( P0 );
 
 	for( int i = 0; i < MaxE; i++ )

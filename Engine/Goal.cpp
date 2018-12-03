@@ -1,11 +1,6 @@
 #include "Goal.h"
 #include "assert.h"
 
-Goal::Goal()
-	:
-	P(P)
-{
-}
 
 bool Goal::HitDetection( const Player& P )
 {
