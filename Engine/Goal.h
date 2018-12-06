@@ -11,12 +11,15 @@ public:
 	void ColorPulsing();
 	void initload(int point1);
 	bool WasHit()const;
+	void respawn();
+	void ScoreBoard(Graphics& gfx);
 
 private:
 	int Point = 0;
 	int GoalWH = 15;
 	int R = 1, G = 1, B = 1;
-	bool Test = false;
+	bool Respawn = false;
 	bool Collected = false;
 	bool ReversePulse = false;
+	int Score = 0;
 };

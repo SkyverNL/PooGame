@@ -48,11 +48,18 @@ private:
 	/*  User Variables              */
 	/********************************/
 
+	void DrawGameOver();
+
 	bool InitialLoad = false;
+
+	const int x = 350;
+	const int y = 250; 
 
 	Player P0;
 
-	static constexpr int MaxE = 10;
+	static constexpr int MaxE = 1;
+
+	bool PlayerHit = false;
 
 	Enemies poos[MaxE];
 

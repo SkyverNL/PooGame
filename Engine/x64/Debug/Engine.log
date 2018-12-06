@@ -1,4 +1,2 @@
-﻿  Goal.cpp
-c:\users\skyver\source\repos\skyvernl\poogame\engine\goal.cpp(5): error C2084: function 'Goal::Goal(void)' already has a body
-  c:\users\skyver\source\repos\skyvernl\poogame\engine\goal.h(8): note: see previous definition of '{ctor}'
-c:\users\skyver\source\repos\skyvernl\poogame\engine\goal.cpp(8): error C2264: 'Goal::Goal': error in function definition or declaration; function not called
+﻿  Game.cpp
+  Engine.vcxproj -> C:\Users\Skyver\Source\Repos\SkyverNL\PooGame\x64\Debug\Engine.exe
