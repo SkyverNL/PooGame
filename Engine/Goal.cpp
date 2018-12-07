@@ -6,14 +6,16 @@
 bool Goal::HitDetection( const Player& P )
 {
 	
-		int GP = Point;
+		int GX = X;
+		int GY = Y;
 		int PX = P.GetX();
 		int PY = P.GetY();
-		int GDim = Point + GoalWH;
+		int GDimX = X + GoalWH;
+		int GDimY = Y + GoalWH;
 		int PXDim = P.GetX() + P.GetWH();
 		int PYDim = P.GetY() + P.GetWH();
 
-		if (GP <= PXDim && GDim >= PX && GP <= PYDim && GDim >= PY)
+		if (GX <= PXDim && GDimX >= PX && GY <= PYDim && GDimY >= PY)
 		{
 			Respawn = true;
 		}
@@ -22,11 +24,8 @@ bool Goal::HitDetection( const Player& P )
 
 void Goal::Drawcode(Graphics & gfx)
 {
-	int width = Point + GoalWH;
-	int heigth = Point + GoalWH;
 	ColorPulsing();
-	gfx.drawSetBox(Point,width,heigth,R,G,B);
-	
+	gfx.drawSetBox(X, Y, GoalWH , GoalWH, R, G, B);
 }
 
 void Goal::ColorPulsing()
@@ -76,11 +75,11 @@ void Goal::ColorPulsing()
 
 }
 
-void Goal::initload(int Point1)
+int Goal::initload(int x,int y)
 {
-	assert(Point <= 500);
-	Point = Point1;
-	return;
+	X = x;
+	Y = y;
+	return X, Y;
 
 }
 
@@ -96,9 +95,11 @@ void Goal::respawn()
 	{
 		std::random_device rd;
 		std::mt19937 rng(rd());
-		std::uniform_int_distribution<int> Newvalue(1, 550);
+		std::uniform_int_distribution<int> Ydist(20, 550);
+		std::uniform_int_distribution<int> Xdist(1, 750);
 
-		Point = Newvalue(rng);
+		X = Xdist(rng);
+		Y = Ydist(rng);
 		Score++;
 		Respawn = false;
 	}
@@ -109,14 +110,10 @@ void Goal::respawn()
 
 void Goal::ScoreBoard(Graphics& gfx)
 {
-	int DrawScore = 0;
-	if (Respawn)
+    gfx.drawSetBox(1, 1,10, Score*99, 0, 200, 0);
+	if (Score == 8)
 	{
-		DrawScore = Score * 10;
+		MasterSwitch = true;
 	}
-
-	gfx.drawSetBox(1,10,DrawScore,0,200,0);
-
-
-
 }
+

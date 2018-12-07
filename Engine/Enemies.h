@@ -20,8 +20,8 @@ public:
 	bool GetState()const;
 	void Drawcode(Graphics& gfx);
 	void EatDetection(Player& player);
-	
-	
+	void SetStateForLives();
+	bool StateLife = false;
 	void velo();
 	void Draw(Graphics& gfx);
 

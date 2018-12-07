@@ -342,6 +342,23 @@ void Enemies::EatDetection(Player & player)
 
 }
 
+void Enemies::SetStateForLives()
+{
+	if (StateLife)
+	{
+
+	}
+	else
+	{
+		if (OnOffState)
+		{
+			StateLife = true;
+		}
+	}
+
+
+}
+
 
 
 void Enemies::velo()

@@ -337,14 +337,16 @@ void Graphics::drawbox(int x0,int y0,int x1,int y1,Color C)
 
 }
 
-void Graphics::drawSetBox(int point, int height, int width,int r,int b,int g)
+void Graphics::drawSetBox(int X,int Y, int height, int width,int r,int b,int g)
 {
+	int XWidth = X + width;
+	int YHeight = Y + height;
 
-	for (int y = point; y < height; y++)
+	for (Y; Y < YHeight; Y++)
 	{
-		for(int x = point;x < width; x++)
+		for(int x = X;x < XWidth ; x++)
 		{
-			PutPixel(x,y,r,g,b);
+			PutPixel(x,Y,r,g,b);
 		}
 	}
 }

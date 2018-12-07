@@ -47,17 +47,24 @@ private:
 	/********************************/
 	/*  User Variables              */
 	/********************************/
-
+	bool StartCheck();
 	void DrawGameOver();
+	bool GameStart = false;
+	void StartScreen();
+	bool Dead = false;
+	void YouWin();
 
 	bool InitialLoad = false;
 
 	const int x = 350;
 	const int y = 250; 
 
+	int X1 = 200;
+	int Y1 = 100;
+
 	Player P0;
 
-	static constexpr int MaxE = 1;
+	static constexpr int MaxE = 10;
 
 	bool PlayerHit = false;
 
