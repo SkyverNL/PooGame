@@ -56,8 +56,8 @@ private:
 
 	bool InitialLoad = false;
 
-	const int x = 350;
-	const int y = 250; 
+	const int x = 325;
+	const int y = 200; 
 
 	int X1 = 200;
 	int Y1 = 100;
