@@ -1,4 +1,13 @@
-﻿  Enemies.cpp
-C:\Users\Skyver Laptop\source\repos\SkyverNL\PooGame\Engine\Enemies.cpp(366,8): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Skyver Laptop\source\repos\SkyverNL\PooGame\Engine\Enemies.cpp(367,8): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
-  Engine.vcxproj -> C:\Users\Skyver Laptop\Source\Repos\SkyverNL\PooGame\x64\Debug\Engine.exe
+﻿  compilation header save succeeded; see C:\Users\Skyve\source\repos\SkyverNL\PooGame\Engine\FramebufferPS.shh
+  compilation header save succeeded; see C:\Users\Skyve\source\repos\SkyverNL\PooGame\Engine\FramebufferVS.shh
+  DXErr.cpp
+  Enemies.cpp
+  Game.cpp
+  Goal.cpp
+  Graphics.cpp
+  Keyboard.cpp
+  Main.cpp
+  MainWindow.cpp
+  Mouse.cpp
+  Player.cpp
+  Engine.vcxproj -> C:\Users\Skyve\Source\Repos\SkyverNL\PooGame\x64\Debug\Engine.exe
