@@ -26,6 +26,7 @@
 #include "Player.h"
 #include "Enemies.h"
 #include "Goal.h"
+#include "Sound.h"
 
 class Game
 {
@@ -44,6 +45,7 @@ private:
 	MainWindow& wnd;
 	Graphics gfx;
 	Goal goal;
+	Sound sound;
 	/********************************/
 	/*  User Variables              */
 	/********************************/
