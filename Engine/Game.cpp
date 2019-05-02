@@ -4,10 +4,11 @@
 #include <assert.h>
 
 
-Game::Game( MainWindow& wnd )
+Game::Game(MainWindow& wnd)
 	:
-	wnd( wnd ),
-	gfx( wnd )
+	wnd(wnd),
+	gfx(wnd),
+	sound(L"fart0.wav")
 {
 	std::random_device rd;
 	std::mt19937 rng( rd() );

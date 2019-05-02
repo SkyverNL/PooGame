@@ -16,6 +16,9 @@
     <Filter Include="Shaders">
       <UniqueIdentifier>{8b6c92a8-f65d-451e-80e3-d65773602b92}</UniqueIdentifier>
     </Filter>
+    <Filter Include="sounds">
+      <UniqueIdentifier>{5e528121-b7d5-4517-ba38-51fe569b6b09}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ChiliWin.h">
@@ -57,6 +60,12 @@
     <ClInclude Include="Goal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundEffect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DXErr.cpp">
@@ -89,6 +98,9 @@
     <ClCompile Include="Goal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="FramebufferPS.hlsl">
@@ -107,5 +119,19 @@
     <Image Include="Chili.ico">
       <Filter>Resource Files</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="fart0.wav">
+      <Filter>sounds</Filter>
+    </Media>
+    <Media Include="fart1.wav">
+      <Filter>sounds</Filter>
+    </Media>
+    <Media Include="fart2.wav">
+      <Filter>sounds</Filter>
+    </Media>
+    <Media Include="gameoy.wav">
+      <Filter>sounds</Filter>
+    </Media>
   </ItemGroup>
 </Project>
