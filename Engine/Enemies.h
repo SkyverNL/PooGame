@@ -16,10 +16,9 @@ public:
 	void ScreenBorderX();
 
 	
-	bool SetState(bool ster);
 	bool GetState()const;
 	void Drawcode(Graphics& gfx);
-	void EatDetection(Player& player);
+	bool EatDetection(Player& player);
 	void SetStateForLives();
 	bool StateLife = false;
 	void velo();
@@ -31,10 +30,10 @@ private:
 
 	bool OnOffState = false;
 	 
-	int X;
-	int Y;
-	int VX;
-	int VY;
+	int X = 0;
+	int Y = 0;
+	int VX = 0;
+	int VY = 0;
 	int WH = 24;
 
 
