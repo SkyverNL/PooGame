@@ -139,6 +139,7 @@
     <ClInclude Include="ChiliException.h" />
     <ClInclude Include="ChiliWin.h" />
     <ClInclude Include="Colors.h" />
+    <ClInclude Include="DrawCode.h" />
     <ClInclude Include="DXErr.h" />
     <ClInclude Include="Enemies.h" />
     <ClInclude Include="Game.h" />
@@ -153,6 +154,7 @@
     <ClInclude Include="SoundEffect.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DrawCode.cpp" />
     <ClCompile Include="DXErr.cpp" />
     <ClCompile Include="Enemies.cpp" />
     <ClCompile Include="Game.cpp" />

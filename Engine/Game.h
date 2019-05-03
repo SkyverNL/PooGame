@@ -27,6 +27,8 @@
 #include "Enemies.h"
 #include "Goal.h"
 #include "Sound.h"
+#include "SoundEffect.h"
+#include "DrawCode.h"
 
 class Game
 {
@@ -40,26 +42,27 @@ private:
 	void UpdateModel();
 	/********************************/
 	/*  User Functions              */
+	std::random_device rd;
+	std::mt19937 rng;
+
+
+
 	/********************************/
 private:
 	MainWindow& wnd;
 	Graphics gfx;
 	Goal goal;
-	Sound sound;
+	SoundEffect sound;
+	Sound Gameover;
+	DrawCode& DC;
 	/********************************/
 	/*  User Variables              */
 	/********************************/
 	bool StartCheck();
-	void DrawGameOver();
 	bool GameStart = false;
-	void StartScreen();
 	bool Dead = false;
-	void YouWin();
 
 	bool InitialLoad = false;
-
-	const int x = 325;
-	const int y = 200; 
 
 	int X1 = 200;
 	int Y1 = 100;

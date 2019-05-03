@@ -3,15 +3,20 @@
 
 
 
-void Enemies::Init(int I_X, int I_Y, float I_VY, float I_VX)
-{
-	assert(Loaded == true);
-	X = I_X;
-	Y = I_Y;
-	VX = I_VX;
-	VY = I_VY;
 
-	Loaded = true;
+void Enemies::Init(int I_X, int I_Y, int I_VY, int I_VX)
+{
+
+	if (!Loaded)
+	{
+
+		X = I_X;
+		Y = I_Y;
+		VX = I_VX;
+		VY = I_VY;
+
+		Loaded = true;
+	}
 }
 
 void Enemies::ScreenBorderY()
@@ -46,13 +51,6 @@ void Enemies::ScreenBorderX()
 	}
 }
 
-
-
-bool Enemies::SetState(bool setr)
-{
-	OnOffState = setr ;
-	return OnOffState;
-}
 
 bool Enemies::GetState() const
 {
@@ -302,8 +300,9 @@ void Enemies::Drawcode(Graphics& gfx)
 
 }
 
-void Enemies::EatDetection(Player & player)
+bool Enemies::EatDetection(Player & player)
 {
+	assert(Loaded == true);
 
 	int BaseUp;
 	int BaseDown;
@@ -332,9 +331,13 @@ void Enemies::EatDetection(Player & player)
 	if (BaseLeft <= TargetRight && TargetLeft <= BaseRight &&
 		BaseUp <= TargetDown && TargetUp <= BaseDown)
 	{
-		SetState(true);
+		if (!OnOffState)
+		{
+			OnOffState = true;
+			return true;
+		}
 	}
-	return;
+	return false;
 
 
 
@@ -371,7 +374,7 @@ void Enemies::Draw(Graphics& gfx)
 {
 	if (!OnOffState)
 	{
-		Init(X, Y, VY, VX);
+
 		Drawcode(gfx);
 
 	}
