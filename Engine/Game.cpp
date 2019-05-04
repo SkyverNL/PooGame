@@ -11,7 +11,8 @@ Game::Game(MainWindow& wnd)
 	DC(DC),
 	rng( rd() ),
 	sound( { L"fart0.wav",L"fart1.wav",L"fart2.wav" } ),
-	Gameover( L"gameoy.wav" )
+	Gameover( L"gameoy.wav" ),
+	point(L"smw_coin.wav")
 {
 	std::uniform_int_distribution<int> Xdist( 1, 750 );
 	std::uniform_int_distribution<int> Ydist( 1, 550 );
@@ -131,6 +132,7 @@ void Game::ComposeFrame()
 				}
 				else
 				{
+					point.Play();
 					goal.respawn();
 				}
 
