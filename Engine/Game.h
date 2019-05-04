@@ -55,6 +55,8 @@ private:
 	SoundEffect sound;
 	Sound Gameover;
 	DrawCode DC;
+
+	Sound point;
 	/********************************/
 	/*  User Variables              */
 	/********************************/

@@ -139,5 +139,8 @@
     <Media Include="gameoy.wav">
       <Filter>sounds</Filter>
     </Media>
+    <Media Include="smw_coin.wav">
+      <Filter>sounds</Filter>
+    </Media>
   </ItemGroup>
 </Project>
