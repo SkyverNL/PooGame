@@ -54,7 +54,7 @@ private:
 	Goal goal;
 	SoundEffect sound;
 	Sound Gameover;
-	DrawCode& DC;
+	DrawCode DC;
 	/********************************/
 	/*  User Variables              */
 	/********************************/
