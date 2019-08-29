@@ -3,10 +3,9 @@
 
 
 
-
-void Enemies::Init(int I_X, int I_Y, int I_VY, int I_VX)
+void Enemies::Init(int I_X, int I_Y, float I_VY, float I_VX)
 {
-	assert(Loaded = true);
+	assert(Loaded == true);
 	X = I_X;
 	Y = I_Y;
 	VX = I_VX;
@@ -372,7 +371,7 @@ void Enemies::Draw(Graphics& gfx)
 {
 	if (!OnOffState)
 	{
-
+		Init(X, Y, VY, VX);
 		Drawcode(gfx);
 
 	}

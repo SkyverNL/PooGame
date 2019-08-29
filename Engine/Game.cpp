@@ -4,6 +4,7 @@
 #include <assert.h>
 
 
+
 Game::Game( MainWindow& wnd )
 	:
 	wnd( wnd ),
@@ -14,7 +15,7 @@ Game::Game( MainWindow& wnd )
 	std::uniform_int_distribution<int> Xdist( 1, 750 );
 	std::uniform_int_distribution<int> Ydist( 1, 550 );
 
-	std::uniform_int_distribution<int> velo( -3, 3 );
+	std::uniform_real_distribution<float> velo( -2.00f, 2.00f );
 
 	goal.initload( Xdist( rng ),Ydist(rng) );
 
@@ -33,6 +34,7 @@ void Game::Go()
 	UpdateModel();
 	ComposeFrame();
 	gfx.EndFrame();
+
 }
 
 void Game::UpdateModel()
@@ -59,11 +61,14 @@ void Game::UpdateModel()
 
 bool Game::StartCheck()
 {
-	if (wnd.kbd.KeyIsPressed(VK_RETURN))
-	{
-		GameStart = true;
-	}
+
+if (wnd.kbd.KeyIsPressed(VK_RETURN))
+
+	GameStart = true;
+
 	return GameStart;
+	
+
 }
 
 void Game::DrawGameOver()

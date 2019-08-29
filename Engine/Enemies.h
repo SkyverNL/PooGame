@@ -8,9 +8,9 @@ class Enemies
 
 public:
 
-	void Init(int I_X, int I_Y, int I_VY, int I_VX);
+	void Init(int I_X, int I_Y, float I_VY, float I_VX);
 
-	bool Loaded = false;
+	bool Loaded = true;
 
 	void ScreenBorderY();
 	void ScreenBorderX();
@@ -33,8 +33,8 @@ private:
 	 
 	int X;
 	int Y;
-	int VX;
-	int VY;
+	float VX;
+	float VY;
 	int WH = 24;
 
 
