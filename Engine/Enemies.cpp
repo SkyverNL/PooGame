@@ -4,7 +4,7 @@
 
 
 
-void Enemies::Init(int I_X, int I_Y, int I_VY, int I_VX)
+void Enemies::Init(int I_X, int I_Y, float I_VY, float I_VX)
 {
 
 	if (!Loaded)

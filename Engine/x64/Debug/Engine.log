@@ -1,17 +1,1 @@
-﻿  compilation header save succeeded; see C:\Users\Skyver Laptop\source\repos\SkyverNL\PooGame\Engine\FramebufferPS.shh
-  compilation header save succeeded; see C:\Users\Skyver Laptop\source\repos\SkyverNL\PooGame\Engine\FramebufferVS.shh
-  DrawCode.cpp
-  DXErr.cpp
-  Enemies.cpp
-  Game.cpp
-  Goal.cpp
-  Graphics.cpp
-  Keyboard.cpp
-  Main.cpp
-  MainWindow.cpp
-  Mouse.cpp
-C:\Users\Skyver Laptop\source\repos\SkyverNL\PooGame\Engine\Game.cpp(28,65): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
-  Player.cpp
-  Sound.cpp
-C:\Users\Skyver Laptop\source\repos\SkyverNL\PooGame\Engine\Game.cpp(28,52): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
-  Engine.vcxproj -> C:\Users\Skyver Laptop\Source\Repos\SkyverNL\PooGame\x64\Debug\Engine.exe
+﻿  Engine.vcxproj -> C:\Users\Skyver Laptop\Source\Repos\SkyverNL\PooGame\x64\Debug\Engine.exe

@@ -17,7 +17,7 @@ Game::Game(MainWindow& wnd)
 	std::uniform_int_distribution<int> Xdist( 1, 750 );
 	std::uniform_int_distribution<int> Ydist( 1, 550 );
 
-	std::uniform_int_distribution<int> velo( -3, 3 );
+	std::uniform_real_distribution<float> velo( -2.50f, 2.50);
 
 	goal.initload( Xdist( rng ),Ydist(rng) );
 
